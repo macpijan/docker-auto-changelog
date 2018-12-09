@@ -25,7 +25,7 @@ function errorCheck {
 
 # ensure we're up to date
 CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-git feetch && git pull origin $CURRENT_BRANCH
+git fetch && git pull origin $CURRENT_BRANCH
 errorCheck "Failed to pull $CURRENT_BRANCH"
 
 # bump version
