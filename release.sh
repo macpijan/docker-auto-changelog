@@ -13,7 +13,7 @@ BUMP="$1"
 
 [ "$BUMP" != "major" -a \
   "$BUMP" != "minor" -a \
-  "$BUMP" != "patch" -a ] && echo "Invalid BUMP" && exit 1
+  "$BUMP" != "patch" ] && echo "Invalid BUMP" && exit 1
 
 function errorCheck {
     ERROR_CODE="$?"
