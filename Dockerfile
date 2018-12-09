@@ -5,4 +5,6 @@ MAINTAINER Maciej Pijanowski <maciej.pijanowski@3mdeb.com>
 RUN apk add git
 RUN npm install -g auto-changelog
 
+ADD VERSION .
+
 ENTRYPOINT ["auto-changelog"]
